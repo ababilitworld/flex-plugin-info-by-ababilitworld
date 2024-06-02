@@ -1,0 +1,35 @@
+{
+    "name": "ababilitworld/flex-pluginfo-by-ababilitworld",
+    "description": "A package to obtain the parent plugin info of the package in wordpress by Ababil IT World.",
+    "keywords": ["plugin information", "plugin information" , "plugin" , "wordpress"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ababil It World",
+            "email": "ababilitworld@email.com",
+            "homepage": "https://ababilitworld.com/"
+        },
+        {
+            "name": "Md Shafiul Alam",
+            "email": "cse.shafiul@email.com",
+            "homepage": "https://ababilitworld.com/"
+        },
+        {
+            "name": "Premium Addons",
+            "email": "premiumaddons@email.com",
+            "homepage": "https://ababilitworld.com/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ababilitworld\\FlexPluginInfoByAbabilitworld\\Package\\": "src/Package"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ababilitworld/flex-pluginfo-by-ababilitworld"
+        }
+    ]
+}
