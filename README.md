@@ -1,1 +1,1 @@
-#flex-pagination-by-ababilitworld
+#flex-plugin-info-by-ababilitworld
