@@ -4,13 +4,13 @@ namespace Ababilitworld\FlexPluginInfoByAbabilitworld\Package\Service;
 
 (defined( 'ABSPATH' ) && defined( 'WPINC' )) || die();
 
-use Ababilitworld\FlexTraitByAbabilitworld\Trait\StaticTrait\StaticTrait;
+use Ababilitworld\FlexTraitByAbabilitworld\Standard\Standard;
 
-if ( ! class_exists( '\Ababilitworld\FlexPluginInfoByAbabilitworld\Package\Service\Service' ) ) 
+if ( ! class_exists( __NAMESPACE__.'\Service' ) ) 
 {
     class Service 
     {
-        use StaticTrait;
+        use Standard;
 
         /**
          * Static Parent Plugin Name
