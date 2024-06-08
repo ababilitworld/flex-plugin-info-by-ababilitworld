@@ -4,16 +4,17 @@ namespace Ababilitworld\FlexPluginInfoByAbabilitworld\Package;
 
 (defined( 'ABSPATH' ) && defined( 'WPINC' )) || die();
 
-use Ababilitworld\FlexTraitByAbabilitworld\Trait\StaticTrait\StaticTrait;
+use Ababilitworld\FlexTraitByAbabilitworld\Standard\Standard;
+
 use function Ababilitworld\{
     FlexPluginInfoByAbabilitworld\Package\Service\service as plugin_info,
 };
 
-if ( ! class_exists( '\Ababilitworld\FlexPluginInfoByAbabilitworld\Package\Package' ) ) 
+if ( ! class_exists( __NAMESPACE__.'\Package' ) ) 
 {
     class Package 
     {
-        use StaticTrait;
+        use Standard;
 
         /**
          * Static Vendor Name
@@ -104,8 +105,6 @@ if ( ! class_exists( '\Ababilitworld\FlexPluginInfoByAbabilitworld\Package\Packa
         }
 
     }
-
-    //new Package();
 	
     /**
      * Return the instance
@@ -116,10 +115,6 @@ if ( ! class_exists( '\Ababilitworld\FlexPluginInfoByAbabilitworld\Package\Packa
     {
         return Package::instance();
     }
-
-    // take off
-    //package();
-
 		
 }
 
